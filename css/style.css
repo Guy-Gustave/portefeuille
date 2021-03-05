@@ -19,6 +19,7 @@ a {
   height: 100vh;
   box-sizing: border-box;
   background-color: #edf1fd;
+  position: relative;
 }
 
 nav {
@@ -65,4 +66,13 @@ nav {
   transition: all ease-in-out 0.5s;
   margin: auto;
   cursor: pointer;
+}
+
+.name {
+  font-family: calibri;
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  transform: translate(-20%, -50%);
 }
