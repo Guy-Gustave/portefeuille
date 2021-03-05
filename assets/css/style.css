@@ -248,3 +248,71 @@ nav {
   overflow: hidden;
   border-radius: 0px 10px 0px 10px;
 }
+
+
+/* portofolio */
+
+#portofolio {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 2% 20px 2%;
+  margin-top: 5rem;
+}
+
+.p-heading {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #e0e2e6;
+  padding: 10px 20px;
+  background-color: #353535;
+  border-radius: 5px;
+
+}
+
+.p-box {
+  background-color: #1f1f1f1f;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.p-box img {
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+}
+
+.p-b-container {
+  width: 90%;
+  height: 70vh;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.text-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(23, 200, 170, 0.8);
+}
+
+.text-overlay h1,p {
+  color: #fff;
+}
+
+.text-overlay h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
