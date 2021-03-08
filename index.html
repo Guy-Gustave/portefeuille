@@ -17,12 +17,15 @@
   <section id="main">
     <nav>
       <a href="#" class="logo">Logo</a>
+
+      <div class="toggle"></div>
+      
       <ul class="menu">
-        <li><a href="#"></a>Home</li>
-        <li><a href="#"></a>About</li>
-        <li><a href="#"></a>Services</li>
-        <li><a href="#"></a>portofolio</li>
-        <li><a href="#"></a>Contacts</li>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portofolio">portofolio</a></li>
+        <li><a href="#contact">Contacts</a></li>
       </ul>
       <a href="#" class="lang">Eng</a>
     </nav>
@@ -47,7 +50,7 @@
     </div>
 
   </section>
-      <!-- section about -->
+  <!-- section about -->
   <section id="about">
     <div class="about-text">
       <h1>About us</h1>
@@ -64,7 +67,7 @@
     </div>
 
   </section>
-      <!-- section service -->
+  <!-- section service -->
   <section id="services">
     <div class="s-headings">
       <h1>Services</h1>
@@ -72,7 +75,7 @@
     </div>
     <div class="s-b-container">
       <!-- <box 1 -->
-      <div class="s-box"> 
+      <div class="s-box">
         <div class="s-b-img">
           <div class="s-type">fullstack</div>
           <img src="./assets//images/fullstack.jpeg" alt="">
@@ -86,7 +89,7 @@
         </div>
       </div>
       <!-- box 2 -->
-      <div class="s-box"> 
+      <div class="s-box">
         <div class="s-b-img">
           <div class="s-type">Backend</div>
           <img src="./assets//images/backend.webp" alt="">
@@ -100,7 +103,7 @@
         </div>
       </div>
       <!-- bo 3 -->
-      <div class="s-box"> 
+      <div class="s-box">
         <div class="s-b-img">
           <div class="s-type">Frontend</div>
           <img src="./assets//images/frontend.webp" alt="">
@@ -115,13 +118,13 @@
       </div>
     </div>
   </section>
-      <!-- section portofolio -->
+  <!-- section portofolio -->
   <section id="portofolio">
     <h1 class="p-heading"> Portofolio</h1>
     <div class="p-b-container">
       <!-- box1 -->
       <div class="p-box">
-        <div class="text overlay">
+        <div class="text-overlay">
           <h1>Writting</h1>
           <p>Client Project</p>
         </div>
@@ -137,7 +140,7 @@
       </div>
       <!-- box3 -->
       <div class="p-box">
-        <div class="text overlay">
+        <div class="text-overlay">
           <h1>Design</h1>
           <p>Client Project</p>
         </div>
@@ -145,7 +148,7 @@
       </div>
       <!-- box4 -->
       <div class="p-box">
-        <div class="text overlay">
+        <div class="text-overlay">
           <h1>Backend</h1>
           <p>Client Project</p>
         </div>
@@ -155,6 +158,39 @@
     </div>
 
   </section>
+
+  <!-- SECTION Contacts -->
+  <section id="contact">
+    <h1>Do you have any project in your dreams? </h1>
+    <a href="#formContact">Contact me </a>
+  </section>
+
+  <!-- section contact form -->
+  <section id="formContact">
+    <form>
+      <div class="contact-left">
+        <h1 class="c-left-title"><font style = "border-bottom: 3px solid rgb(113, 167, 113);">Write us</font> </h1>
+        <div class="f-name">
+          <font>Name</font>
+          <input type="text" placeholder="Fullname">
+        </div>
+        <div class="f-email">
+          <font>Email</font>
+          <input type="text" placeholder="example@email.com">
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="message">
+          <font>Message</font>
+          <textarea name="message" id="" cols="25" rows="6" placeholder="message ..."></textarea>
+          
+        </div>
+        <button>Submit</button>
+      </div>
+
+    </form>
+  </section>
+
 </body>
 
 </html>
