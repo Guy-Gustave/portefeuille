@@ -465,8 +465,8 @@ nav {
 }
 
 .message font {
-  font-size: 18px;
-  color: #4e4e4e;
+  font-size: 20px;
+  color: #9c9898;
 
 }
 
@@ -478,17 +478,18 @@ nav {
 
 .contact-right textarea {
   width: 100% !important;
-  height: 300px !important;
+  height: 200px !important;
   border: none;
   background-color: transparent;
   box-sizing: border-box;
-  color: #eaeaea;
+  color: #999595;
   font-size: 18px;
   padding: 20px auto;
+  margin-top: 15px;
 }
 
 .contact-right textarea::placeholder {
-  color: #ebebeb;
+  color: #494444;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -500,7 +501,7 @@ nav {
 
 .contact-right button {
   width: 100%;
-  height: 80px;
+  height: 50px;
   background-color: yellowgreen;
   font-weight: bold;
   border: none;
