@@ -51,6 +51,7 @@ nav {
   padding: 10px 50px;
   background-color: #e0e2e6;
   z-index: 1;
+  box-shadow: 2px 2px 12px rgba(0, 0,0, 0.5);
 }
 
 .menu {
@@ -58,9 +59,9 @@ nav {
 }
 
 .menu li a {
-  padding: 10px 15px;
-  color: #241e1e;
-  font-size: 25px;
+  padding: 10px 12px;
+  color: #524f4f;
+  font-size: 22px;
 }
 
 .lang {
@@ -74,7 +75,8 @@ nav {
   font-weight: bolder;
 }
 
-.menu li:hover {
+.menu li a:hover,
+.menu li a.active{
   /* background-color: rgb(104, 75, 75); */
   color: rgb(204, 94, 94);
   transition: all ease-in-out 0.5s;
@@ -83,18 +85,18 @@ nav {
 }
 
 .name {
-  font-family: calibri;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 500px;
   position: absolute;
   left: 20%;
-  top: 40%;
+  top: 50%;
   transform: translate(-20%, -50%);
 }
 
 .name p:nth-child(1),
 .name .details {
   color: #0c707c;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .name h1 {
@@ -314,22 +316,20 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(49, 226, 197, 0.8);
+  background-color: rgba(67, 75, 73, 0.8);
   display: none;
 }
 
-.text-overlay h1,p {
-  color: #fff;
-}
-
 .text-overlay h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 0;
+  color: #ddd;
 }
  
 .text-overlay p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0;
+  color: rgb(236, 224, 168);
 }
 
 .p-box:hover .text-overlay {
@@ -590,6 +590,41 @@ nav {
   .toggle::before {
     content: '\f0c9';
     line-height: 0px;
-    margin-left: 25px;
+    margin-left: -35px;
+  }
+
+  .toggle.active:before {
+    content: '\f00d';
+  }
+
+  nav {
+    padding: 10px 30px;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: #0f0f0f;
+    top: 50px;
+    left: 0;
+    transition: 00.5s;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 3px solid #151515;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  nav ul li a {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255,255, 0.10);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px !important;
+    padding: 0px !important;
   }
 }
