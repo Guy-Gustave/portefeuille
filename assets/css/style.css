@@ -93,6 +93,15 @@ nav {
   transform: translate(-20%, -50%);
 }
 
+.languages h2{
+  padding-top: 2rem;
+  color: #adb;
+}
+
+.languages {
+  padding-top: 4rem;
+}
+
 .name p:nth-child(1),
 .name .details {
   color: #0c707c;
