@@ -14,5 +14,27 @@ function submitForm(e) {
   saveContactInfo(name, email, message);
 
   document.querySelector('.contact-form').requestFullscreen();
+}
 
+function saveContactInfo(name, email, message) {
+  let newContactInfo = contactInfo.push();
+  
+  newContactInfo.set({
+    name: name,
+    email: email,
+    message: message,
+  });
+  retrieveInfos();
+}
+
+
+function sendemail(name, email, message) {
+  email.send({
+    Host: 'smtp.gmail.com',
+    Username: 'guymoustapha@gmai.com',
+    Password: '' ,//to be generate from app passwords,
+    To : 'guymoustapha@gmai.com',
+    From: 'guymoustapha@gmai.com'
+
+  })
 }
