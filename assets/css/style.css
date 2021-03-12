@@ -26,7 +26,7 @@ a {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-color: #edf1fd;
+  background-color: #c4c7cf;
   position: relative;
   background-image: url('../images/IMG_20200607_221613.png');
   background-repeat: no-repeat;
@@ -96,21 +96,23 @@ nav {
 .languages h2{
   padding-top: 2rem;
   color: #adb;
+  /* font-size: 2rem; */
 }
 
 .languages {
-  padding-top: 4rem;
+  padding-top: 2.7rem;
 }
 
 .name p:nth-child(1),
 .name .details {
-  color: #0c707c;
-  font-size: 16px;
+  color: #063338;
+  font-size: 18px;
+  line-height: 1.5rem;
 }
 
 .name h1 {
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 35px;
   margin: 0px;
   letter-spacing: 3px;
   color: #333;
@@ -168,7 +170,7 @@ nav {
 
 .about-text {
   font-family: sans-serif;
-  width: 80%;
+  width: 70%;
 }
 
 .about-text h1 {
@@ -184,7 +186,7 @@ nav {
 
 .about-text p {
   color: #bbb;
-  padding: 10px 20px;
+  padding: 10px 25px 0px 5px;
 }
 
 /* below section services */
@@ -531,6 +533,11 @@ nav {
     transform: translate(-10%, -50%);
   }
 
+  .about {
+    display: flex;
+    flex-flow: column;
+  }
+
   .about-model img {
     height: 380px;
   }
@@ -540,7 +547,10 @@ nav {
   }
 
   .s-b-container {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: auto auto;
+    max-width: 100%;
   }
 
   .s-box {
@@ -561,6 +571,27 @@ nav {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    background-image: none;
+  }
+
+  .name {
+    left: 10%;
+    top: 85%;
+    transform: translate(-10%, -50%);
+  }
+
+  .social {
+    margin-left: 35rem;
+  }
+
+  .social img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cv-btn {
+    margin-bottom: 8rem;
+    margin-left: 20rem;
   }
 
   .about-model {
@@ -569,7 +600,7 @@ nav {
 
   #about {
     justify-content: center;
-    padding-top: 0;
+    margin-top: -20rem;
   }
 
   .about-text {
@@ -582,6 +613,14 @@ nav {
 
   .p-b-container {
     width: 100%;
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    height: 100%;
+  }
+
+  #services {
+    margin-top: -5rem;
   }
 
   #portofolio {
@@ -592,7 +631,7 @@ nav {
   }
 }
 
-@media(max-width:900px) {
+@media(max-width:780px) {
   .toggle {
     display: block;
   }
@@ -636,5 +675,13 @@ nav {
     align-items: center;
     margin: 0px !important;
     padding: 0px !important;
+  }
+
+  .s-b-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    height: 100%;
   }
 }
