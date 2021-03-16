@@ -4,18 +4,19 @@ $(document).ready(function() {
   })
 })
 
-document.querySelector('.contact-form').addEventListener('submit', submitForm);
+const myForm = document.getElementById('contact-form');
+myForm.addEventListener('submit', submitForm);
 function submitForm(e) {
   e.preventDefault();
-  let name = document.querySelector('.name').value;
+  let name = document.querySelector('.nam').value;
   let email = document.querySelector('.email').value;
   let message= document.getElementsByName('message').value;
 
   saveContactInfo(name, email, message);
 
-  document.querySelector('.contact-form').requestFullscreen();
+  document.querySelector('.contact-form').reset();
 }
-
+2
 function saveContactInfo(name, email, message) {
   let newContactInfo = contactInfo.push();
   
@@ -28,13 +29,22 @@ function saveContactInfo(name, email, message) {
 }
 
 
-function sendemail(name, email, message) {
-  email.send({
-    Host: 'smtp.gmail.com',
-    Username: 'guymoustapha@gmai.com',
-    Password: '' ,//to be generate from app passwords,
-    To : 'guymoustapha@gmai.com',
-    From: 'guymoustapha@gmai.com'
+let ref = firebase.database().ref('infos');
+ref.on('value', gotData);
 
-  })
+function gotData(data) {
+  let info = data.val()
+  let
+}
+
+function sendemail(name, email, message) {
+  Email.send({
+    Host: 'smtp.gmail.com',
+    Username: 'guymoustapha@gmail.com',
+    Password: '' ,//to be generate from app passwords,
+    To : 'guymoustapha@gmail.com',
+    From: 'guymoustapha@gmail.com',
+    Subject: `${name} sent you a message`,
+    Body : `Name: ${name} </br> Email: ${email} </br> message: ${message}`
+  }).then((mesaage)=> alert('mail sent successfully'))
 }

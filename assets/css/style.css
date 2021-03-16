@@ -106,7 +106,7 @@ nav {
 .name p:nth-child(1),
 .name .details {
   color: #063338;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5rem;
 }
 
@@ -575,13 +575,15 @@ nav {
   }
 
   .name {
-    left: 10%;
-    top: 85%;
-    transform: translate(-10%, -50%);
+    left: 14%;
+    top: 90%;
+    padding-right: 40px;
+    /* transform: translate(-10%, -50%); */
   }
 
   .social {
-    margin-left: 35rem;
+    margin-left: 2rem;
+    bottom: 0px;
   }
 
   .social img {
@@ -590,8 +592,8 @@ nav {
   }
 
   .cv-btn {
-    margin-bottom: 8rem;
-    margin-left: 20rem;
+    margin-bottom: 11rem;
+    margin-left: 18rem;
   }
 
   .about-model {
@@ -634,6 +636,33 @@ nav {
 @media(max-width:780px) {
   .toggle {
     display: block;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-flow: column;
+    margin: 15px auto;
+  }
+
+  .contact-right {
+    margin: 3rem 1rem;
+  }
+
+  .contact-left {
+    margin-bottom: 20px;
+  }
+
+  .f-name,
+  .f-email {
+    display: flex;
+    margin:auto;
+  }
+
+  .f-name,
+  .f-email input {
+    margin: 0px;
+    padding-left: 20px;
+    border-bottom: none;
   }
 
   .toggle::before {
@@ -683,5 +712,33 @@ nav {
     flex-flow: column;
     width: 80%;
     height: 100%;
+  }
+
+  /* #main {
+    margin-top: 3rem;
+    padding: 20px;
+  } */
+
+  .name {
+    width: 100%;
+    left: 20%;
+    top: 90%;
+    transform: translate(-10%, -50%);
+  }
+
+  .name h1 {
+    font-size: 25px;
+  }
+
+  .name .details {
+    font-size: 15px;
+    /* color: #1c2fd3; */
+  }
+  .cv-btn {
+    width: 130px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 12px;
+    
   }
 }
