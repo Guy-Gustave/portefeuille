@@ -37,7 +37,7 @@ function gotData(data) {
   let
 }
 
-function sendemail(name, email, message) {
+function sendEmail(name, email, message) {
   Email.send({
     Host: 'smtp.gmail.com',
     Username: 'guymoustapha@gmail.com',
