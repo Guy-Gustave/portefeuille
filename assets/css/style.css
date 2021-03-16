@@ -412,7 +412,6 @@ nav {
   background-color: #1a1a1a1a;
   box-shadow: 2px 12px 20px rgba(0, 0,0, 0.2);
   border: 1px solid rgba(255, 255,255, 0.1);
-
 }
 
 .contact-left {
@@ -639,31 +638,46 @@ nav {
   }
 
   #contact-form {
-    display: flex;
+    max-width: 1000%;
     flex-flow: column;
-    margin: 15px auto;
+    margin: auto;
+    height: 40vh;
   }
 
-  .contact-right {
-    margin: 3rem 1rem;
+  .contact-left h1 {
+    font-size: 2.2rem;
+    margin-left: 3rem;
+    /* padding-left: 2rem; */
+  }
+
+  .contact-right textarea {
+    width: 95% !important;
+    height: 100px !important;
+    border:olive;
+    font-size: 16px;
+    padding: 20px auto;
+    margin-top: 15px;
   }
 
   .contact-left {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    width: 80%;
   }
 
   .f-name,
   .f-email {
     display: flex;
     margin:auto;
+    margin-left: 2rem;
   }
 
-  .f-name,
-  .f-email input {
-    margin: 0px;
-    padding-left: 20px;
-    border-bottom: none;
-  }
+  .f-email input,
+  .f-name input {
+  height: 23px;
+  width: 180px;
+  background-color: transparent;
+  color: #fff;
+}
 
   .toggle::before {
     content: '\f0c9';
@@ -715,15 +729,22 @@ nav {
   }
 
   /* #main {
-    margin-top: 3rem;
-    padding: 20px;
-  } */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: none; */
+  /* }  */
 
   .name {
-    width: 100%;
-    left: 20%;
-    top: 90%;
-    transform: translate(-10%, -50%);
+    width: 85%;
+    left: 2%;
+    top: 93%;
+    transform: translate(5%, -48%);
+    background-image: none;
+  }
+
+  .name h2 {
+    display: none;
   }
 
   .name h1 {
@@ -731,14 +752,27 @@ nav {
   }
 
   .name .details {
-    font-size: 15px;
+    font-size: 14px;
     /* color: #1c2fd3; */
   }
   .cv-btn {
     width: 130px;
     height: 30px;
     border-radius: 7px;
-    font-size: 12px;
-    
+    font-size: 12px;   
   }
+
+  .about-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    color: rgb(228, 180, 180);
+    padding: 10px 5px;
+  }
+  
 }
