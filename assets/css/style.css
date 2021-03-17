@@ -534,11 +534,16 @@ nav {
   /* padding-left: 2rem; */
 }
 
-.call h4  {
+.ecrire h4  {
   color: #063338;
   font-size: 1.3rem;
 }
 
+.link a {
+  margin: 10px;
+}
+
+.connect img,
 .call a {
   padding-left: 3rem;
 }
