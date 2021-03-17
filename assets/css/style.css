@@ -403,6 +403,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(211, 209, 208);
 }
 
 #formContact form {
@@ -518,6 +519,18 @@ nav {
   color: #353515;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.ecrire {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.connect img {
+  width: 60px;
+  height: 60px;
 }
 
 
