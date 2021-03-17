@@ -531,8 +531,38 @@ nav {
 .connect img {
   width: 60px;
   height: 60px;
+  /* padding-left: 2rem; */
 }
 
+.call h4  {
+  color: #063338;
+  font-size: 1.3rem;
+}
+
+.call a {
+  padding-left: 3rem;
+}
+
+footer {
+  color: #fff;
+  padding: 2rem 6rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 3rem;
+  color: #7a6666;
+}
+
+footer a img {
+  margin: 1rem;
+  width: 17px;
+  height: 17px;
+}
+ 
 
 @media(max-width:1190px) {
   #main {
