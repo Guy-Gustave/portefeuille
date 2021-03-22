@@ -338,6 +338,18 @@ nav {
   margin: 0;
   color: #ddd;
 }
+
+.text-overlay a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0px 20px;
+  font-weight: bolder;
+}
+
+.text-overlay a:hover {
+  font-size: 2rem;
+}
  
 .text-overlay p {
   font-size: 1.2rem;
