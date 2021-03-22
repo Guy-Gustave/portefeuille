@@ -185,8 +185,10 @@ nav {
 }
 
 .about-text p {
+  font-size: 1.2rem;
   color: #bbb;
-  padding: 10px 25px 0px 5px;
+  padding: 10px 35px 0px 5px;
+  margin-right: 2rem;
 }
 
 /* below section services */
@@ -281,14 +283,14 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 2% 20px 2%;
-  margin-top: 5rem;
+  padding: 30px 2% 20px 2%;
+  margin-top: 2rem;
 }
 
 .p-heading {
-  font-size: 1.8rem;
+  font-size: 3.8rem;
   text-align: center;
-  color: #e0e2e6;
+  color: #22d1ac;
   padding: 10px 20px;
   background-color: #353535;
   border-radius: 5px;
