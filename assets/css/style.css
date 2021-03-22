@@ -553,6 +553,10 @@ nav {
   font-size: 1.3rem;
 }
 
+.link {
+  margin-left: 3rem;
+}
+
 .link a {
   margin: 10px;
 }
