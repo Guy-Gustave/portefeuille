@@ -28,11 +28,10 @@ a {
   box-sizing: border-box;
   background-color: #c4c7cf;
   position: relative;
-  background-image: url('../images/IMG_20200607_221613.png');
+  background-image: url('../images/aa.png');
   background-repeat: no-repeat;
-  background-size: 1250;
-  
-  background-position: right bottom;
+  background-size: 1250;  
+  background-position: bottom right;
 }
 
 nav {
@@ -867,7 +866,7 @@ footer a img {
     height: 30px;
     border-radius: 7px;
     font-size: 12px;
-    left: 3%;
+    left: 10%;
     top: 37%;   
   }
 
