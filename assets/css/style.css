@@ -657,7 +657,7 @@ footer a img {
   }
 
   .social {
-    margin-left: 40rem;
+    margin-left: 30rem;
     bottom: 0px;
   }
 
@@ -668,7 +668,7 @@ footer a img {
 
   .cv-btn {
     margin-bottom: 11rem;
-    margin-left: 18rem;
+    margin-left: 15rem;
   }
 
   .about-model {
@@ -708,18 +708,12 @@ footer a img {
 
   .cv-btn {
     position: absolute;
-    left: 3%;
-    top: 37%;
+    left: 48%;
+    top: 28%;
     transform: translate(5%, 70%);
-  }
-
-  .social {
-    margin-left:10rem;
-    bottom: 0px;
-  }
-
-  .social .fl {
-    display: none;
+    height: 20px;
+    width: 130px;
+    font-size: 12px;
   }
 
   .ecrire {
@@ -739,6 +733,15 @@ footer a img {
 @media(max-width:780px) {
   .toggle {
     display: block;
+  }
+
+  .social {
+    margin-left:10rem;
+    bottom: 0px;
+  }
+
+  .social .fl {
+    display: none;
   }
 
   #contact-form {
@@ -863,7 +866,9 @@ footer a img {
     width: 130px;
     height: 30px;
     border-radius: 7px;
-    font-size: 12px;   
+    font-size: 12px;
+    left: 3%;
+    top: 37%;   
   }
 
   .about-text h1 {
