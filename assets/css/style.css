@@ -725,6 +725,11 @@ footer a img {
     display: none;
   }
 
+  .ecrire img {
+    width: 45px;
+    height: 35px;
+  }
+
   footer h1 {
     font-size: 2rem;
     color: #9e8f8f;
